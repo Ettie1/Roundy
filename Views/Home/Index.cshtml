@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Roundy</h1>
+    <h2>Roundy roundy </h2>
+</div>
+
+<button id="btnClick" class="btn btn-danger">Click me button</button>
+
+
+<script>
+    document.onload = ()=>{
+        let btnClick = document.getElementById("btnClick");
+
+        btnClick.onclick = ()=>{
+            let ans = prompt("Enter your name");
+            alert("Welcome Roundy " + ans + "Roundy");
+        }
+
+
+    };
+    
+    
+</script>
